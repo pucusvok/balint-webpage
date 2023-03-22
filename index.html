@@ -4,16 +4,17 @@
 <head>
     <title>Benedek Bálint weboldala</title>
     <link rel="stylesheet" href="mystyle.css">
-    
+
 </head>
 
 <body>
-    
+
     <div id="wrapper">
         <div id="myHeader" class="header">
             <div class="name">Benedek Bálint</div>
             <div class="titulus">Tanulási fejlesztési tréner</div>
             <div id="buttons" class="buttons">
+
                 <table>
                     <tr>
                         <td class="button-td"><button class="button">Kezdőlap</button></td>
@@ -25,13 +26,15 @@
                 </table>
             </div>
         </div>
-        <script type="text/Javascript" src="js.js"></script>
+
         <div class="content">
-            <div id="introduce">
-                <div class="profPic">Ide jön a kép</div>
-                <div class="introduceTextBox">
-                    <h1>Bemutatkozás</h1>
-                    <span class="introduceText">
+            <div class="bemutatkozas">
+                <h1>Bemutatkozás</h1>
+                <div class="flexContainer" id="flexContainerID">
+                    <div class="flexItem" style="align-items: center; display:contents;">
+                        <img src="images/portrait.jpg" style="width: 30vw;">
+                    </div>
+                    <div class="flexItem" style="width:50vw; min-width: 500px">
                         Benedek Bálint vagyok, okleveles pedagógiatanár, tanulási képességfejlesztő tréner, tanulási
                         coach.
                         Első két diplomámat az ELTE Pedagógiai és Pszichológiai Karán, pedagógia BA és neveléstudomány
@@ -75,17 +78,14 @@
                         értelmi
                         fogyatékosság, specifikus tanulási zavar). Ebben az esetben gyógypedagógus és/vagy
                         fejlesztőpedagógus nyújthat segítséget.
-                    </span>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <div class="flexContainer">
-            <div class="flexItem">
-                <img src="images/portrait.jpg" style="width: 30vw;">
-            </div>
+            <script type="text/Javascript" src="js.js"></script>
+
 
         </div>
-    </div>
 </body>
 
 </html>

@@ -3,6 +3,7 @@ window.onscroll = function() {headerStay()};
 
 // Get the header
 var header = document.getElementById("buttons");
+var container = document.getElementById("flexContainerID");
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
@@ -11,6 +12,7 @@ var sticky = header.offsetTop;
 function headerStay() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    container.classList.add("flexContainerChanged")
   } else {
     header.classList.remove("sticky");
   }

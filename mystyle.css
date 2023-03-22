@@ -81,12 +81,35 @@ button:hover{
 }
 
 .sticky + .content {
-    padding-top: 185px;
+    padding-top: 50px;
   }
 
 
-#introduce{
-    height: calc(100vh - 185px);
+.bemutatkozas{
+    text-align: center;
+}
+
+.flexContainerChanged{
+    background-color: white;
+}
+
+.flexContainer {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
     background-color: #131416;
     color:white;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.flexItem {
+    width: 40vw;
+    min-width:400px;
+    margin: 20px;
+
+    text-align: justify;
 }
