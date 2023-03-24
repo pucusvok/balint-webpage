@@ -84,9 +84,17 @@ button:hover{
     padding-top: 50px;
   }
 
+  .content{
+
+
+  }
+
 
 .bemutatkozas{
+    padding-top: 50px;
     text-align: center;
+    background-color: #131416;
+    color: white;
 }
 
 .flexContainerChanged{
@@ -112,4 +120,22 @@ button:hover{
     margin: 20px;
 
     text-align: justify;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .szolgaltatasok{
+    padding-top: 50px;
+    text-align: center;
+    background-color: #EDF2FD;
+    color: black;
 }
