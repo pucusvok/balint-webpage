@@ -1,3 +1,10 @@
+html {
+    scroll-behavior: smooth;
+   }
+   
+   a {
+    text-decoration: none;
+   } 
 
 *{
     box-sizing: border-box;
@@ -11,19 +18,11 @@
 
 .header{
     height: 185px;
-    background-color: #EDF2FD;
-    color:black;
+    background-color: #a7b4b7;
+    color:white;
 
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    margin-top: 0;
-    background-color:  #EDF2FD;
-    padding-top: 0;
-  }
 
  
 .name{
@@ -49,9 +48,11 @@
 
 .buttons{    
     height: 50px;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
+    background-color: #a7b4b7;
+
 }
 
 .button-td{
@@ -66,17 +67,20 @@ button{
     cursor:pointer;
     padding:3px;
 
+
 }
 
 button:focus{
     border-color: #3A6DE4;
-    border-radius: 6px;
+    border-radius: 9px;
+   
     color: #000000;
 }
 
 button:hover{
     background-color: #3A6DE4;
-    border-radius: 6px;
+    border-radius: 9px;
+   
     color: #ffffff;
 }
 
@@ -86,19 +90,20 @@ button:hover{
 
   .content{
 
-
   }
 
 
 .bemutatkozas{
     padding-top: 50px;
     text-align: center;
-    background-color: #131416;
-    color: white;
+    background-color: #EDF2FD;
+
 }
 
 .flexContainerChanged{
-    background-color: white;
+    background-color: #a7b4b7;
+
+
 }
 
 .flexContainer {
@@ -108,7 +113,7 @@ button:hover{
     justify-content: center;
     align-items: flex-start;
     align-content: center;
-    background-color: #131416;
+    background-color: #EDF2FD;;
     color:white;
     overflow: auto;
     flex-direction: row;
@@ -118,16 +123,15 @@ button:hover{
     width: 40vw;
     min-width:400px;
     margin: 20px;
-
     text-align: justify;
 }
 
 .reveal{
-    position: relative;
+
     transform: translateY(150px);
     opacity: 0;
     transition: 2s all ease;
-  }
+   }
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
@@ -139,3 +143,11 @@ button:hover{
     background-color: #EDF2FD;
     color: black;
 }
+.sticky {
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    margin-top: 0;
+    background-color:  #EDF2FD;
+    padding-top: 0;
+  }
